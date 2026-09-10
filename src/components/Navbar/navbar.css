@@ -1,0 +1,7 @@
+.navbar_button button {
+  background: var(--gradient-button);
+  transition: all 1s ease-in-out;
+}
+.navbar_button button:hover {
+  background: var(--gradient-hero);
+}

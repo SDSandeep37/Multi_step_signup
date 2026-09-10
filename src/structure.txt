@@ -1,0 +1,32 @@
+src/
+│
+├── components/
+│   └── signup/
+│       ├── SignupWizard.jsx
+│       ├── ProgressBar.jsx
+│       ├── StepContainer.jsx
+│       │
+│       └── steps/
+│           ├── TermsStep.jsx
+│           ├── EmailStep.jsx
+│           ├── OtpStep.jsx
+│           ├── UsernameStep.jsx
+│           ├── DobStep.jsx
+│           ├── FullNameStep.jsx
+│           └── LocationStep.jsx
+│
+├── pages/
+│   ├── Signup.jsx
+│   └── Welcome.jsx
+│
+├── lib/
+│   ├── clerk.js
+│   ├── validation.js
+│   └── location.js
+│
+├── context/
+│   └── SignupContext.jsx
+│
+├── App.jsx
+├── main.jsx
+└── index.css

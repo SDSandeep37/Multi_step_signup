@@ -1,0 +1,84 @@
+@import "tailwindcss";
+:root {
+  /* 🎨 Base Colors */
+  --color-bg: #0b0c10;
+  --color-surface: #1f1f2e;
+  --color-text: #ffffff;
+  --color-subtext: #b3b3b3;
+
+  /* 🌈 Accent Colors */
+  --color-primary: #8b5cf6; /* Neon purple */
+  --color-secondary: #f59e0b; /* Warm orange */
+  --color-tertiary: #06b6d4; /* Cyan glow */
+
+  /* 💡 Gradients */
+  --gradient-hero: linear-gradient(
+    135deg,
+    #ff512f 0%,
+    #dd2476 50%,
+    #1e3a8a 100%
+  );
+  --gradient-button: linear-gradient(90deg, #8b5cf6 0%, #ec4899 100%);
+  --gradient-overlay: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.9)
+  );
+
+  /* ✨ Shadows & Glow */
+  --shadow-glow: 0 0 20px rgba(139, 92, 246, 0.6);
+  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.4);
+
+  /* 🧭 Border & Radius */
+  --radius-default: 0.75rem;
+  --border-color: rgba(255, 255, 255, 0.1);
+}
+* {
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+.footer_button {
+  background: var(--gradient-button);
+  transition: all 1s ease-in-out;
+  border-radius: 20px;
+  width: 200px;
+  height: 50px;
+}
+.footer_button:hover {
+  background: var(--gradient-hero);
+  border-radius: 14px;
+}
+.sign_button {
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  padding: 10px 20px;
+  min-width: 200px;
+  border-radius: 10px;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+/* .terms {
+  background-image: url("/src/assets/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+.steps_button {
+  background: var(--gradient-button);
+  transition: all 1s ease-in-out;
+  border-radius: 20px;
+}
+.steps_button:hover {
+  background: var(--gradient-hero);
+  border-radius: 14px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  cursor: pointer;
+}

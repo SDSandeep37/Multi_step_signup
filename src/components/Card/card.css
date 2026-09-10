@@ -1,0 +1,13 @@
+.card {
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgb(23 42 49) 0%,
+    rgb(29 154 130) 100%,
+    rgba(237, 221, 83, 1) 34%
+  );
+  padding: 20px;
+  max-width: 250px;
+  height: 250px;
+  box-shadow: 3px -3px 4px 2px var(--color-subtext);
+}
